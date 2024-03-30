@@ -2,6 +2,9 @@ import os.path as osp
 import sys
 import os
 
+if not os.path.exists('data/cache/'):
+    os.makedirs('data/cache/')
+
 if os.listdir('data/cache/'):
     os.system('rm data/cache/*')
 
